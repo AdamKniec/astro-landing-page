@@ -1,0 +1,31 @@
+@use "../../styles/variables" as variables;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  .list {
+    display: flex;
+    list-style-type: none;
+    .list-element {
+      margin-right: 1rem;
+    }
+  }
+  .button {
+    width: 10rem;
+    height: 1.5rem;
+    background: none;
+    border: none;
+    background: variables.$background;
+    background: variables.$greenGradient;
+    padding: 1.3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    color: white;
+  }
+}
