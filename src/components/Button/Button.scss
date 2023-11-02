@@ -1,0 +1,16 @@
+@use "../../styles/variables";
+
+.button {
+  width: 10rem;
+  height: 1.5rem;
+  background: none;
+  border: none;
+  background: variables.$background;
+  background: variables.$greenGradient;
+  padding: 1.3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  color: variables.$white;
+}

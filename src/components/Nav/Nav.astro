@@ -1,15 +1,18 @@
 ---
 import "./nav.scss";
+import Button from "../Button/Button.astro";
 ---
 
 <nav class="nav">
-  <div>Logo</div>
+  <div class="navContent">
+    <img src="../../../src/images/logo.svg" />
 
-  <ul class="list">
-    <li class="list-element">Home</li>
-    <li class="list-element">About</li>
-    <li class="list-element">Contact</li>
-  </ul>
+    <ul class="list">
+      <li class="list-element">Home</li>
+      <li class="list-element">About</li>
+      <li class="list-element">Contact</li>
+    </ul>
 
-  <button class="button">Send Email</button>
+    <Button label="Request Invite" />
+  </div>
 </nav>
