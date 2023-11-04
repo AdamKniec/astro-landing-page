@@ -24,6 +24,7 @@
     .benefits {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       .benefitTitle {
         font-size: 1.25rem;
       }
