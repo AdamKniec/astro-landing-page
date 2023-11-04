@@ -1,19 +1,18 @@
 ---
-import { Code } from "astro:components";
+import "../ArticlesSection/ArticlesSection.scss";
+import ArticleCard from "../../components/ArticleCard/ArticleCard.astro";
 ---
 
-<section>
-  <h2>Latest Articles</h2>
-  <div>
-    <div>
-      <img src="" alt="" />
-      <p>By Claire Robinson</p>
-      <p>Receive money in any currency with no fees</p>
-      <p>
-        The world is getting smaller and we're becoming more mobile. So why
-        should you be forced to only receive money in a single...
-      </p>
-    </div>
+<section class="articlesSection">
+  <h2 class="sectionHeader">Latest Articles</h2>
+  <div class="articlesWrapper">
+    <ArticleCard
+      author="Claire Robinson"
+      title="Receive money in any currency with no fees"
+      articleIntro="The world is getting smaller and we are becoming more mobile. So why should you be forced to only receive money in a single..."
+      imageSrc=""
+      imageAlt=""
+    />
     <div>
       <img src="" alt="" />
       <p>By Wilson Hutton</p>
