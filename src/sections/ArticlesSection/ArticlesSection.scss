@@ -1,0 +1,19 @@
+@use "../../styles/variables";
+.articlesSection {
+  padding: 0.5rem 5rem;
+  padding: 5rem 0;
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .sectionHeader {
+    font-size: 2.25rem;
+    font-weight: lighter;
+    color: variables.$darkGray;
+  }
+  .articlesWrapper {
+    display: flex;
+    gap: 2rem;
+  }
+}

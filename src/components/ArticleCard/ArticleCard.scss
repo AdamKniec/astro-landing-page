@@ -1,0 +1,7 @@
+@use "../../styles/variables";
+
+.articleIntro {
+  color: variables.$lightGray;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+}

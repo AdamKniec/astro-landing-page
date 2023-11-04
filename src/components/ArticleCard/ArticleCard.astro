@@ -1,0 +1,13 @@
+---
+import "./ArticleCard.scss";
+const {author, title, articleIntro, imageSrc, imageAlt} = Astro.props;
+---
+
+<div>
+  <img src={imageSrc} alt={imageAlt} />
+  <p>By {author}</p>
+  <p>{title}</p>
+  <p class='articleIntro'>
+    {articleIntro}
+  </p>
+</div>
