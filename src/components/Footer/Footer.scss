@@ -1,11 +1,77 @@
 @use "../../styles/variables";
 
 .footer {
-  background-color: variables.$bgDarkBlue;
   color: variables.$white;
+  background-color: variables.$bgDarkBlue;
+  @media (min-width: 1200px) {
+    padding-bottom: 1rem;
+  }
   .innerWrapper {
-    max-width: 70rem;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media (min-width: 1200px) {
+      max-width: 70rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .leftColumnWrapper {
+      @media (min-width: 1200px) {
+        display: flex;
+      }
+
+      .imagesWrapper {
+        text-align: center;
+        @media (min-width: 1200px) {
+          margin-right: 10rem;
+        }
+        .logo {
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+        }
+        .socialMediaWrapper {
+          display: flex;
+          gap: 1rem;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+      }
+      .linkList {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        font-size: 0.825rem;
+        .link {
+          cursor: pointer;
+          color: variables.$grayLink;
+        }
+        @media (min-width: 1200px) {
+          text-align: left;
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    button {
+      margin: 0 auto;
+      @media (min-width: 1200px) {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
+    }
+    .copyRights {
+      color: variables.$lightGray;
+      font-size: 0.825rem;
+    }
   }
 }

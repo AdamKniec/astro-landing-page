@@ -1,13 +1,13 @@
 @use "../../styles/variables";
 
 .articleCard {
-  max-width: 16rem;
   display: flex;
   flex-direction: column;
   .articleCardImage {
     border-radius: 0.3rem 0.3rem 0 0;
     width: 100%;
     max-height: 10.625rem;
+    object-fit: cover;
   }
   .innerContentWrapper {
     background-color: variables.$white;

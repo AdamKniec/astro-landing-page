@@ -5,10 +5,10 @@ import Button from "../../components/Button/Button.astro";
 
 <footer class="footer">
   <div class="innerWrapper">
-    <div>
-      <div>
-        <img src="../../../src/images/logo-footer.svg" />
-        <div>
+    <div class="leftColumnWrapper">
+      <div class="imagesWrapper">
+        <img src="../../../src/images/logo-footer.svg" class="logo" />
+        <div class="socialMediaWrapper">
           <img src="../../../src/images/icon-facebook.svg" alt="" /><img
             src="../../../src/images/icon-youtube.svg"
             alt=""
@@ -19,15 +19,24 @@ import Button from "../../components/Button/Button.astro";
         </div>
       </div>
       <div>
-        <ul class="footerLinks">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+        <ul class="linkList">
+          <li>
+            <a class="link">Home</a>
+          </li>
+          <li>
+            <a class="link">About</a>
+          </li>
+          <li>
+            <a class="link">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
-    <Button label="Request Invite" />
-    <p>© EasyBank. All Rights Reserved.</p>
+
+    <div>
+      <Button label="Request Invite" />
+      <p class="copyRights">&copy; EasyBank. All Rights Reserved.</p>
+    </div>
   </div>
 </footer>
 
