@@ -1,46 +1,62 @@
 @use "../../styles/variables";
 
 .introSection {
-  background-color: variables.$bgLightGray;
-  padding: 0.5rem 5rem;
+  @media (min-width: 75rem) {
+    background-color: variables.$bgLightGray;
+    padding: 0.5rem 5rem;
+  }
   .innerWrapper {
-    max-width: 70rem;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    position: relative;
+    @media (min-width: 75rem) {
+      max-width: 70rem;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      position: relative;
+    }
     .headerContainer {
-      width: 25rem;
-      padding: 11rem 0;
+      @media (min-width: 75rem) {
+        width: 25rem;
+        padding: 11rem 0;
+      }
       .header {
-        font-size: 3.25rem;
-        font-family: PublicSansLight;
-        margin-bottom: 1.5rem;
-        color: variables.$darkGray;
+        @media (min-width: 75rem) {
+          font-size: 3.25rem;
+          font-family: PublicSansLight;
+          margin-bottom: 1.5rem;
+          color: variables.$darkGray;
+        }
       }
       .subheader {
-        color: variables.$lightGray;
-        line-height: 1.7rem;
-        margin-bottom: 2rem;
+        @media (min-width: 75rem) {
+          color: variables.$lightGray;
+          line-height: 1.7rem;
+          margin-bottom: 2rem;
+        }
       }
     }
     .imagesContainer {
-      position: absolute;
-      height: 55rem;
-      right: -45%;
-      background: url("../../images//bg-intro-desktop.svg");
-      top: -13.125rem;
-      width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      &:after {
-        content: "";
-        display: block;
-        background: url(../../images/image-mockups.png);
-        width: 125rem;
-        height: 125rem;
+      display: none;
+      @media (min-width: 75rem) {
+        position: absolute;
+        height: 55rem;
+        right: -45%;
+        background: url("../../images//bg-intro-desktop.svg");
+        top: -13.125rem;
+        width: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: 12.5rem 5rem;
+        display: block;
+      }
+      &:after {
+        @media (min-width: 75rem) {
+          content: "";
+          display: block;
+          background: url(../../images/image-mockups.png);
+          width: 125rem;
+          height: 125rem;
+          background-repeat: no-repeat;
+          background-position: 12.5rem 5rem;
+        }
       }
     }
   }
