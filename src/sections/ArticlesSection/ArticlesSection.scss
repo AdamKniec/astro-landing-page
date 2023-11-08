@@ -21,10 +21,10 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
-      @media (min-width: 768px) {
+      @media (min-width: 48rem) {
         grid-template-columns: 1fr 1fr;
       }
-      @media (min-width: 1024px) {
+      @media (min-width: 64rem) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
     }

@@ -14,7 +14,7 @@
       font-weight: lighter;
       color: variables.$darkGray;
       text-align: center;
-      @media (min-width: 1024px) {
+      @media (min-width: 64rem) {
         text-align: left;
       }
     }
@@ -26,7 +26,7 @@
       margin-right: auto;
       margin-left: auto;
       text-align: center;
-      @media (min-width: 1024px) {
+      @media (min-width: 64rem) {
         text-align: left;
         margin-left: unset;
       }
@@ -35,10 +35,10 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
-      @media (min-width: 768px) {
+      @media (min-width: 48rem) {
         grid-template-columns: 1fr 1fr;
       }
-      @media (min-width: 1024px) {
+      @media (min-width: 64rem) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
       .benefitBox {
@@ -47,7 +47,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media (min-width: 1024px) {
+        @media (min-width: 64rem) {
           justify-content: left;
           align-items: flex-start;
         }
@@ -59,7 +59,7 @@
           line-height: 1.5rem;
           text-align: center;
           margin-top: 0;
-          @media (min-width: 1024px) {
+          @media (min-width: 64rem) {
             text-align: left;
           }
         }
