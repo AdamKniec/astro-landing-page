@@ -1,13 +1,14 @@
 ---
 import "./Footer.scss";
 import Button from "../../components/Button/Button.astro";
+import FooterImage from "../../images/logo-footer.svg";
 ---
 
 <footer class="footer">
   <div class="innerWrapper">
     <div class="leftColumnWrapper">
       <div class="imagesWrapper">
-        <img src="../../src/images/logo-footer.svg" class="logo" />
+        <img src={`${FooterImage}`} class="logo" />
         <div class="socialMediaWrapper">
           <img src="../../src/images/icon-facebook.svg" alt="" /><img
             src="../../../src/images/icon-youtube.svg"
