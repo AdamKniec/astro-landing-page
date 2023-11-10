@@ -71,12 +71,12 @@
       display: flex;
       flex-direction: column-reverse;
       background: url("../../images//bg-intro-mobile.svg");
-      width: 500px;
-      height: 280px;
+      width: 31.25rem;
+      height: 17.5rem;
       background-repeat: no-repeat;
       background-position: center center;
       width: 100%;
-      background-size: 100% 450px;
+      background-size: 100% 28.125rem;
 
       @media (min-width: 75rem) {
         position: absolute;
