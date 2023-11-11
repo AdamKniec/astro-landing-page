@@ -7,10 +7,23 @@ import Footer from "../components/Footer/Footer.astro";
 import "../styles/global.scss";
 ---
 
-<Nav />
-<main>
-  <IntroSection />
-  <BenefitsSection />
-  <ArticlesSection />
-</main>
-<Footer />
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Easybank</title>
+    <meta name="description" content="Easybank - easiest way to manage your savings">
+  </head>
+  <body>
+    <Nav />
+      <main>
+        <IntroSection />
+        <BenefitsSection />
+        <ArticlesSection />
+      </main>
+      <Footer />    
+  </body>
+</html>
+
