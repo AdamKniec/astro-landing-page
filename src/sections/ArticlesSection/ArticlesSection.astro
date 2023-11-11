@@ -1,6 +1,10 @@
 ---
 import "../ArticlesSection/ArticlesSection.scss";
 import ArticleCard from "../../components/ArticleCard/ArticleCard.astro";
+import CurrencyImage from "../../images/image-currency.jpg";
+import RestaurantImage from "../../images/image-restaurant.jpg";
+import PlaneImage from "../../images/image-plane.jpg";
+import ConfettiImage from "../../images/image-confetti.jpg";
 ---
 
 <section class="articlesSection">
@@ -11,28 +15,28 @@ import ArticleCard from "../../components/ArticleCard/ArticleCard.astro";
         author="Claire Robinson"
         title="Receive money in any currency with no fees"
         articleIntro="The world is getting smaller and we are becoming more mobile. So why should you be forced to only receive money in a single..."
-        imageSrc="../src/images/image-currency.jpg"
+        imageSrc={CurrencyImage}
         imageAlt=""
       />
       <ArticleCard
         author="Wilson Hutton"
         title="Treat yourself without worrying about money"
         articleIntro="Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you..."
-        imageSrc="../src/images/image-restaurant.jpg"
+        imageSrc={RestaurantImage}
         imageAlt=""
       />
       <ArticleCard
         author="William Hutton"
         title="Take your easybank card wherever you go"
         articleIntro=" We want you to enjoy your travels. This is why we don't charge any fees on purchuases while you're abroad. We'll even show you..."
-        imageSrc="../src/images/image-plane.jpg"
+        imageSrc={PlaneImage}
         imageAlt=""
       />
       <ArticleCard
         author="Claire Robinson"
         title="Our invite-only Beta accounts are now live!"
         articleIntro="After a lot of hard work by the whole team, we're excited to launchour closed beta. It's easy to request an invite through the site..."
-        imageSrc="../src/images/image-confetti.jpg"
+        imageSrc={ConfettiImage}
         imageAlt=""
       />
     </div>

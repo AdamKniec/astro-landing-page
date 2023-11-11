@@ -2,6 +2,11 @@
 import "./Footer.scss";
 import Button from "../../components/Button/Button.astro";
 import FooterImage from "../../images/logo-footer.svg";
+import IconFacebook from "../../images/icon-facebook.svg";
+import IconYoutube from "../../images/icon-youtube.svg";
+import IconTwitter from "../../images/icon-twitter.svg";
+import IconPinterest from "../../images/icon-pinterest.svg";
+import IconInstagram from "../../images/icon-instagram.svg";
 import { Image } from "astro:assets";
 ---
 
@@ -11,13 +16,11 @@ import { Image } from "astro:assets";
       <div class="imagesWrapper">
         <Image src={FooterImage} alt="Easybank" class="logo" />
         <div class="socialMediaWrapper">
-          <img src="../../src/images/icon-facebook.svg" alt="" /><img
-            src="../../../src/images/icon-youtube.svg"
-            alt=""
-          /><img src="../../../src/images/icon-twitter.svg" alt="" /><img
-            src="../../../src/images/icon-pinterest.svg"
-            alt=""
-          /><img src="../../../src/images/icon-instagram.svg" alt="" />
+          <Image src={IconFacebook} alt="Facebook" />
+          <Image src={IconYoutube} alt="Youtube" />
+          <Image src={IconTwitter} alt="Twitter" />
+          <Image src={IconPinterest} alt="Pinterest" />
+          <Image src={IconInstagram} alt="Instagram" />
         </div>
       </div>
       <div>
@@ -41,5 +44,3 @@ import { Image } from "astro:assets";
     </div>
   </div>
 </footer>
-
-<!-- TODO FILL ALTS -->
