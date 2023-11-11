@@ -1,12 +1,13 @@
 ---
 import "./nav.scss";
 import Button from "../Button/Button.astro";
+import { Image } from "astro:assets";
+import Logo from "../../images/logo.svg";
 ---
 
 <nav class="nav">
   <div class="navContent">
-    <img src="../../../src/images/logo.svg" />
-
+    <Image src={Logo} alt="Easybank" />
     <ul class="list">
       <li class="list-element">Home</li>
       <li class="list-element">About</li>

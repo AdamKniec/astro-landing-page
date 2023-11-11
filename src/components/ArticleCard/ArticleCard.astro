@@ -1,10 +1,11 @@
 ---
 import "./ArticleCard.scss";
 const { author, title, articleIntro, imageSrc, imageAlt } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <div class="articleCard">
-  <img src={imageSrc} alt={imageAlt} class="articleCardImage" />
+  <Image src={imageSrc} alt={imageAlt} class="articleCardImage" />
   <div class="innerContentWrapper">
     <p class="authorNameWrapper">By {author}</p>
     <p>{title}</p>
