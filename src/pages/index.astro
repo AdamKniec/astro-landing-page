@@ -1,12 +1,14 @@
 ---
-import Nav from "../components/Nav/Nav.astro";
+import { Nav } from "../components/Nav/Nav.jsx";
 import IntroSection from "../sections/IntroSection/IntroSection.astro";
 import BenefitsSection from "../sections/BenefitsSection/BenefitsSection.astro";
 import ArticlesSection from "../sections/ArticlesSection/ArticlesSection.astro";
 import Footer from "../components/Footer/Footer.astro";
+import Logo from "../images/logo.svg";
+import Button from "../components/Button/Button.astro";
 import "../styles/global.scss";
+import { Image } from "astro:assets";
 ---
-
 
 <html lang="en">
   <head>
@@ -14,16 +16,25 @@ import "../styles/global.scss";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Easybank</title>
-    <meta name="description" content="Easybank - easiest way to manage your savings">
+    <meta
+      name="description"
+      content="Easybank - easiest way to manage your savings"
+    />
   </head>
   <body>
-    <Nav />
-      <main>
-        <IntroSection />
-        <BenefitsSection />
-        <ArticlesSection />
-      </main>
-      <Footer />    
+    <Nav client:load>
+      <Image slot="logo" src={Logo} alt="Easy banking" />
+      <Button
+        slot="requestInviteButton"
+        label="Request Invite"
+        className="button desktopNav"
+      />
+    </Nav>
+    <main>
+      <IntroSection />
+      <BenefitsSection />
+      <ArticlesSection />
+    </main>
+    <Footer />
   </body>
 </html>
-

@@ -39,6 +39,12 @@
           gap: 1rem;
           text-align: center;
           margin-bottom: 2rem;
+          img {
+            &:hover {
+              transform: scale(1.2);
+              cursor: pointer;
+            }
+          }
         }
       }
       .linkList {
@@ -53,6 +59,9 @@
         .link {
           cursor: pointer;
           color: variables.$grayLink;
+          &:hover {
+            color: variables.$green;
+          }
         }
         @media (min-width: 75rem) {
           text-align: left;

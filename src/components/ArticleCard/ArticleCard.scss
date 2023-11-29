@@ -3,6 +3,14 @@
 .articleCard {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0.25rem 0.5rem variables.$darkShadow;
+
+  &:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+  }
   .articleCardImage {
     border-radius: 0.3rem 0.3rem 0 0;
     width: 100%;
@@ -16,6 +24,9 @@
       margin-top: 0;
       font-size: 0.7rem;
       color: variables.$lightGray;
+    }
+    .title {
+      color: variables.$darkGray;
     }
     .articleIntro {
       color: variables.$lightGray;

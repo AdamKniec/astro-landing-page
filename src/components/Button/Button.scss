@@ -14,4 +14,7 @@
   border-radius: 3rem;
   color: variables.$white;
   cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
 }
