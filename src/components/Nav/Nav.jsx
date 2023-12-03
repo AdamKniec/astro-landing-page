@@ -38,9 +38,3 @@ export const Nav = (props) => {
     </header>
   );
 };
-
-// notatka przekazywanie slotów z .astro do komponentu JSX
-// odbieranie ich z propsów
-// komponenty JSX nie moga importowac nic z .astro
-// named slots
-// ze slotow nie korzysta sie w JSX
