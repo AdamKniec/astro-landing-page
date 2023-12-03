@@ -1,10 +1,31 @@
 @use "../../styles/variables";
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(variables.$overlayGradient),
+    to(transparent)
+  );
+  @media (min-width: 45rem) {
+    display: none;
+  }
+}
+
 .nav {
   padding: 0.5rem 5rem;
   z-index: 9999;
   position: relative;
   background-color: variables.$white;
+  position: fixed;
+  width: -webkit-fill-available;
+  @media (min-width: 45rem) {
+    display: block;
+    position: relative;
+  }
   .navContent {
     align-items: center;
     justify-content: space-between;
@@ -12,12 +33,77 @@
     display: flex;
     margin: 0 auto;
     .list {
+      position: absolute;
+      top: 100%;
+      height: auto;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: -webkit-fill-available;
       list-style-type: none;
+      margin-right: 5rem;
+      background-color: variables.$white;
+      max-height: 18.75rem;
+      gap: 3rem;
+      border-radius: 1rem;
+      @media (min-width: 45rem) {
+        display: flex;
+        position: relative;
+        top: unset;
+        flex-direction: row;
+        background-color: variables.$white;
+      }
+      .button.desktopNav {
+        display: flex;
+        @media (min-width: 45rem) {
+          display: none;
+        }
+      }
       .list-element {
         margin-right: 3rem;
         color: variables.$lightGray;
+        margin-right: 0;
       }
+    }
+    .list-mobile-open {
+      padding: 5rem 1rem;
+      @media (min-width: 45rem) {
+        padding: unset;
+      }
+    }
+    .list-mobile-closed {
+      display: none;
+      @media (min-width: 45rem) {
+        display: flex;
+      }
+    }
+  }
+
+  .button.desktopNav {
+    display: none;
+    @media (min-width: 45rem) {
+      display: flex;
+    }
+  }
+  .hamburgerButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.625rem;
+
+    .menuBar {
+      display: flex;
+      flex-direction: column;
+      width: 1.875rem;
+      height: 0.125rem;
+      gap: 0.125rem;
+      margin-bottom: 0.3125rem;
+      background-color: variables.$black;
+    }
+
+    @media (min-width: 45rem) {
+      display: none;
     }
   }
 }
