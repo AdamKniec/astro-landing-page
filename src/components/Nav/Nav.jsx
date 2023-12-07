@@ -12,7 +12,7 @@ export const Nav = (props) => {
       ></div>
       <nav className="nav">
         <div className="navContent">
-          {props.logo}
+          <a href="/">{props.logo}</a>
           <ul
             className={`${
               navOpen ? "list list-mobile-open" : "list list-mobile-closed"
