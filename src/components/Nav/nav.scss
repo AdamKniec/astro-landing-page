@@ -64,6 +64,10 @@
         margin-right: 3rem;
         color: variables.$lightGray;
         margin-right: 0;
+        cursor: pointer;
+        &:hover {
+          color: variables.$green;
+        }
       }
     }
     .list-mobile-open {
